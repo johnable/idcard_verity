@@ -41,7 +41,7 @@ module IdcardVerity
   	def others
   	  idcard.slice(-4..-2)
   	end
-    
+
     def birth
       return idcard.slice(6..14) if type
       '19' + idcard.slice(6..12)
@@ -69,7 +69,7 @@ module IdcardVerity
 
   	def check_bit
   	  return true unless lastbit
-  	  return true if lastbit == sysbit
+  	  return true if lastbit.downcase == sysbit
   	end
 
   	def check_geoinfo
