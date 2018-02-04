@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'idcard_verity'
+gem 'idcard_verity', git: 'https://github.com/johnable/idcard_verity.git'
 ```
 
 And then execute:
